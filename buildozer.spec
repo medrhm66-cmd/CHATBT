@@ -1,5 +1,6 @@
 [app]
-
+# (str) Source directory where the app lives
+source.dir = .
 # (str) Title of your application
 title = Bluetooth Chat
 
