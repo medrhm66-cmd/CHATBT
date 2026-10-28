@@ -41,7 +41,7 @@ android.permissions = BLUETOOTH, BLUETOOTH_ADMIN, ACCESS_FINE_LOCATION, ACCESS_C
 
 # (list) target API
 android.api = 33
-
+android.accept_sdk_license = True
 # (list) Minimum API your APK will support.
 android.minapi = 21
 
