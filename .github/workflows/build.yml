@@ -5,6 +5,9 @@ on:
   push:
     branches: [main, master]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -64,3 +67,13 @@ jobs:
           name: ChatBT-apk
           path: bin/*.apk
           if-no-files-found: error
+
+      - name: Rename APK
+        run: cp bin/*.apk ChatBT.apk
+
+      - name: Publish Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: ChatBT (آخر نسخة)
+          files: ChatBT.apk
