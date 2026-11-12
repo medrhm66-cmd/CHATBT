@@ -8,7 +8,7 @@ version = 1.0
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,ttf,json
 
-requirements = python3,kivy==2.2.1,kivymd==1.1.1,pillow,pyjnius,android
+requirements = python3,kivy==2.2.1,kivymd==1.1.1,pillow,pyjnius,android,arabic-reshaper==3.0.0,python-bidi==0.4.2
 
 orientation = portrait
 fullscreen = 0
@@ -25,7 +25,8 @@ android.accept_sdk_license = True
 android.enable_androidx = True
 android.allow_backup = True
 
-p4a.branch = master
+p4a.branch = v2024.01.21
+p4a.bootstrap = sdl2
 
 [buildozer]
 log_level = 2
